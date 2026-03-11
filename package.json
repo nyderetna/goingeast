@@ -1,0 +1,9 @@
+{
+  "name": "maluku-journal",
+  "version": "1.0.0",
+  "description": "Minimalist editorial travel blog inspired by Roadbook.com.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

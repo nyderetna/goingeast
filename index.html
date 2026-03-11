@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maluku | Spices & Seas</title>
+    <meta
+      name="description"
+      content="An editorial travel journal inspired by Roadbook.com, exploring the islands of Maluku." />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80"
+      imagesrcset="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80 1200w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80 1800w"
+      imagesizes="(max-width: 980px) 100vw, 48vw" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark">MB</span>
+          <div>
+            <p class="brand-title">Maluku Journal</p>
+            <p class="brand-subtitle">Spices & Seas</p>
+          </div>
+        </div>
+        <div class="header-tools">
+          <nav class="island-nav" aria-label="Island groups">
+            <button class="nav-pill is-active" data-filter="all">All Islands</button>
+            <button class="nav-pill" data-filter="lease">Lease</button>
+            <button class="nav-pill" data-filter="banda">Banda</button>
+            <button class="nav-pill" data-filter="southeast">Southeast Maluku</button>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle dark mode">
+            <span class="toggle-track" aria-hidden="true">
+              <span class="toggle-icon toggle-icon--sun">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4" />
+                  <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                </svg>
+              </span>
+              <span class="toggle-icon toggle-icon--moon">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+              </span>
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="issue-strip reveal" aria-label="Issue metadata">
+          <div>
+            <p class="issue-label">Issue 03</p>
+            <p class="issue-title">Archipelago Letters</p>
+          </div>
+          <div>
+            <p class="issue-label">March 2026</p>
+            <p class="issue-title">Banda Sea, Maluku</p>
+          </div>
+          <div>
+            <p class="issue-label">Editorial Tempo</p>
+            <p class="issue-title">Slow reading · Fast loading</p>
+          </div>
+          <div class="issue-control">
+            <p class="issue-label">Issue Index</p>
+            <div class="issue-select">
+              <select aria-label="Issue index">
+                <option>Issue 03 — Archipelago Letters</option>
+                <option>Issue 02 — Spice Cartographies</option>
+                <option>Issue 01 — Tides of Maluku</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero">
+          <figure class="hero-media reveal" aria-hidden="true">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80"
+              srcset="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80 1200w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80 1800w"
+              sizes="(max-width: 980px) 100vw, 48vw"
+              alt="Banda Sea shoreline at dusk"
+              decoding="async"
+              fetchpriority="high" />
+          </figure>
+          <div class="hero-content reveal">
+            <p class="hero-kicker">A Maluku Editorial Travelogue</p>
+            <h1>Spices & Seas: a serene chronicle of Maluku’s island poetry.</h1>
+            <p class="hero-body">
+              A minimalist, high-performance journal inspired by Roadbook.com—crafted
+              for slow reading and fast loading. Traverse Maluku through intimate island
+              narratives, historic spice routes, and quiet coral sanctuaries.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="archive.html">Explore the archive</a>
+              <a class="btn ghost" href="#">Begin with “Spice Routes”</a>
+            </div>
+            <div class="hero-contact">
+              <a href="https://wa.me/+6281288001588" target="_blank" rel="noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.52a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.56-1.1a2 2 0 0 1 2.11-.45c.82.24 1.66.42 2.52.54a2 2 0 0 1 1.72 2.02z" />
+                  </svg>
+                </span>
+                WhatsApp
+              </a>
+              <a href="mailto:a.s.retraubun@gmail.com">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 7L2 7" />
+                  </svg>
+                </span>
+                Email
+              </a>
+              <a href="https://instagram.com/adit.sam.r" target="_blank" rel="noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <circle cx="12" cy="12" r="3.5" />
+                    <circle cx="17.5" cy="6.5" r="1" />
+                  </svg>
+                </span>
+                Instagram
+              </a>
+            </div>
+            <div class="hero-tags">
+              <span>Lease Islands</span>
+              <span>Banda Sea</span>
+              <span>Southeast Maluku</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-header reveal" aria-label="Editorial intro">
+          <p class="section-kicker">Editorial Grid</p>
+          <h2>Island notes curated for slow mornings and open seas.</h2>
+          <p>
+            Modular stories, generous white space, and a refined grid layout shaped for
+            immersive reading across Maluku’s archipelago.
+          </p>
+        </section>
+
+        <section class="editorial-grid" aria-label="Feature stories">
+          <article class="story-card reveal is-cover" data-island="banda">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80"
+                alt="Banda Neira harbor at sunrise"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <span class="story-badge">Cover Story</span>
+              <p class="story-meta">Banda • 7 min read</p>
+              <h2>Spice Routes in the Morning Mist</h2>
+              <p>
+                Sail through Banda Neira at dawn, where nutmeg warehouses glow and
+                colonial architecture meets volcanic silhouettes.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+
+          <article class="story-card reveal tall" data-island="lease">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+                alt="Ambon coastal cliffs"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <p class="story-meta">Lease • 5 min read</p>
+              <h2>Ambon’s Cerulean Coves</h2>
+              <p>
+                A curated list of quiet beaches and spice gardens, with light trails for
+                immersive weekend escapes.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+
+          <article class="story-card reveal" data-island="southeast">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                alt="Kei Islands shoreline"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <p class="story-meta">Southeast Maluku • 6 min read</p>
+              <h2>Coral Cathedrals of Kei</h2>
+              <p>
+                Powder-white sands and translucent reefs define Kei’s serene coastlines.
+                Dive into reefs that shimmer like porcelain.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+
+          <article class="story-card reveal wide" data-island="banda">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+                alt="Mount Api hike"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <p class="story-meta">Banda • 9 min read</p>
+              <h2>Volcanic Hikes, Peppered Evenings</h2>
+              <p>
+                Trek Mount Api then linger over spice tea rituals while the sea turns
+                midnight blue.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+
+          <article class="story-card reveal" data-island="lease">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+                alt="Harbor promenade"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <p class="story-meta">Lease • 4 min read</p>
+              <h2>Harbor Cafés & Storytelling Evenings</h2>
+              <p>
+                From Ambon’s waterfront cafés to seaside prayer halls, evening rituals
+                reflect island warmth.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+
+          <article class="story-card reveal tall" data-island="southeast">
+            <figure class="story-image">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+                alt="Ivory shoreline under starlight"
+                loading="lazy"
+                decoding="async" />
+            </figure>
+            <div class="story-content">
+              <p class="story-meta">Southeast Maluku • 8 min read</p>
+              <h2>Island Sleepouts Under Ivory Skies</h2>
+              <p>
+                Overnight on remote islets with a stargazing guide to Maluku’s best
+                celestial panoramas.
+              </p>
+              <a class="story-link" href="#">Read Story</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="contact-section reveal" aria-label="Contact">
+          <div class="contact-intro">
+            <p class="section-kicker">Contact</p>
+            <h2>Let’s chart new island stories together.</h2>
+            <p>
+              Reach out for collaborations, editorial pitches, or guided Maluku itineraries.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <a
+              class="contact-card"
+              href="https://wa.me/+6281288001588"
+              target="_blank"
+              rel="noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.52a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.56-1.1a2 2 0 0 1 2.11-.45c.82.24 1.66.42 2.52.54a2 2 0 0 1 1.72 2.02z" />
+                </svg>
+              </span>
+              <div>
+                <p class="contact-label">WhatsApp</p>
+                <p class="contact-value">+62 812 8800 1588</p>
+              </div>
+            </a>
+            <a class="contact-card" href="mailto:a.s.retraubun@gmail.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-10 7L2 7" />
+                </svg>
+              </span>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">a.s.retraubun@gmail.com</p>
+              </div>
+            </a>
+            <a
+              class="contact-card"
+              href="https://instagram.com/adit.sam.r"
+              target="_blank"
+              rel="noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="3.5" />
+                  <circle cx="17.5" cy="6.5" r="1" />
+                </svg>
+              </span>
+              <div>
+                <p class="contact-label">Instagram</p>
+                <p class="contact-value">@adit.sam.r</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p class="footer-title">Maluku Journal</p>
+          <p class="footer-text">Minimalist travel essays inspired by the spice archipelago.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://instagram.com/adit.sam.r" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+          <a href="archive.html">Issue Archive</a>
+          <a href="mailto:a.s.retraubun@gmail.com">Email</a>
+          <a href="https://wa.me/+6281288001588" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <a
+      class="floating-contact"
+      href="https://wa.me/+6281288001588"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.52a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.56-1.1a2 2 0 0 1 2.11-.45c.82.24 1.66.42 2.52.54a2 2 0 0 1 1.72 2.02z" />
+      </svg>
+    </a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
