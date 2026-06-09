@@ -1,4 +1,4 @@
-const navButtons = document.querySelectorAll('.nav-pill');
+const accordionButtons = document.querySelectorAll('.island-panel');
 const storyCards = document.querySelectorAll('.story-card');
 const revealItems = document.querySelectorAll('.reveal');
 const themeToggle = document.querySelector('[data-theme-toggle]');
@@ -12,6 +12,24 @@ const setTheme = (theme) => {
   }
 };
 
+const applyFilter = (filter) => {
+  storyCards.forEach((card) => {
+    const match = filter === 'all' || card.dataset.island === filter;
+    card.classList.toggle('is-hidden', !match);
+    card.setAttribute('aria-hidden', match ? 'false' : 'true');
+  });
+};
+
+const setActiveAccordionItem = (button) => {
+  accordionButtons.forEach((item) => {
+    const isActive = item === button;
+    item.classList.toggle('is-active', isActive);
+    item.setAttribute('aria-pressed', String(isActive));
+  });
+
+  applyFilter(button.dataset.filter);
+};
+
 const storedTheme = localStorage.getItem('theme');
 if (storedTheme) {
   setTheme(storedTheme);
@@ -19,17 +37,17 @@ if (storedTheme) {
   setTheme(prefersDark.matches ? 'dark' : 'light');
 }
 
-navButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    navButtons.forEach((item) => item.classList.remove('is-active'));
-    button.classList.add('is-active');
+accordionButtons.forEach((button) => {
+  button.addEventListener('mouseenter', () => {
+    setActiveAccordionItem(button);
+  });
 
-    const filter = button.dataset.filter;
-    storyCards.forEach((card) => {
-      const match = filter === 'all' || card.dataset.island === filter;
-      card.classList.toggle('is-hidden', !match);
-      card.setAttribute('aria-hidden', match ? 'false' : 'true');
-    });
+  button.addEventListener('focus', () => {
+    setActiveAccordionItem(button);
+  });
+
+  button.addEventListener('click', () => {
+    setActiveAccordionItem(button);
   });
 });
 
